@@ -45,7 +45,7 @@ export const InviteModal = () => {
         `/api/servers/${server?.id}/invite-code`
       );
 
-      onOpen("invite", {server: response.data})
+      onOpen("invite", { server: response.data });
     } catch (error) {
       console.log(error);
     } finally {
@@ -81,7 +81,12 @@ export const InviteModal = () => {
               )}
             </Button>
           </div>
-          <Button onClick={onNew} disabled={isLoading} variant="link" className="text-xs text-zinc-500 mt-4">
+          <Button
+            onClick={onNew}
+            disabled={isLoading}
+            variant="link"
+            className="text-xs text-zinc-500 mt-4"
+          >
             Generar un nuevo enlace
             <RefreshCw className="w-4 h-3 ml-2" />
           </Button>
