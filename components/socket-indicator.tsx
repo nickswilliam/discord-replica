@@ -9,14 +9,14 @@ export const SocketIndicator = () => {
   if (!isConnected) {
     return (
       <Badge variant="outline" className="bg-yellow-600 text-white border-none">
-        Actualizado: cada 1seg
+        Recargando: cada 1seg
       </Badge>
     );
   }
 
   return (
     <Badge variant="outline" className="bg-emerald-600 text-white border-none">
-      Actualización en tiempo real!
+      Actualización en tiempo real
     </Badge>
   );
 };
