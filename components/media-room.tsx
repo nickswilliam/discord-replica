@@ -53,6 +53,7 @@ export const MediaRoom = ({ chatId, video, audio }: MediaRoomProps) => {
       connect={true}
       video={video}
       audio={audio}
+      connectOptions={{ autoSubscribe: false }}
     >
       <VideoConference />
     </LiveKitRoom>
